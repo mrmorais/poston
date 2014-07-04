@@ -41,9 +41,8 @@ CREATE TABLE IF NOT EXISTS `post` (
 --
 
 INSERT INTO `post` (`id`, `conteudo`, `status`, `tipo`) VALUES
-(24, 'Estudar para a prova de filosofia, todos as questÃµes. Ver no acadÃªmico se estÃ£o lÃ¡ os exercÃ­cios.', 'fazer', 'normal'),
+(24, 'Estudar para a prova de filosofia.', 'fazer', 'normal'),
 (23, 'Estudar para a prova de matemÃ¡tica', 'feito', 'urgente'),
-(25, 'Verificar o email, muitooo mesmo para saber sobre o envio do Intel Galileu', 'fazer', 'normal'),
 (26, 'Acessar a internet', 'fazendo', 'urgente');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
