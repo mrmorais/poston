@@ -1,0 +1,61 @@
+<html>
+<meta charset="utf-8">
+<head><title>Tananam tananam</title>
+<script>
+var j=0;
+function verSeE(form) {
+	frases = ["Você viu minha mamãe?", "Don't Blink!", "Gravatas borboletas são legais", "Você está errando demais!", "Wibbly Wobbly Timey Wimey", "Fantastic", "I'm sorry, so sorry"];
+	elementErro = document.getElementById('erro');
+	contMsg = document.getElementById('contMsg');
+	if(form.resposta.value != "allons-y") {
+		elementErro.innerHTML = frases[j];
+		j = j + 1;
+		if (j == 6) {
+			j = 0;
+		}
+	} else {
+		elementErro.innerHTML = "Yep";
+		contMsg.innerHTML = "<div id='msg'><p>Allons-y, minha amiga! Allons-y. Acho que você não erraria Isabelly, quer dizer... Espero que você não tenha burlado a brincadeira e ter acessado o código-fonte, isso não vale. Se você tiver feito isso num fale mais comigo kkk </p><p>Meio choco né essa pagina velha? Num tive tempo pra fazer algo melhor =S</p><p>Mas não era só isso! Parabéns Isabelly (Isy, Isa..), nunca imaginei que <i>time ladys</i> comemoram aniversário kkk (se bem que 900 anos deve ser meio louco, 900 velinhas diga aí). Mas é isso... Parabéns. Eu desejo tudo de bom na sua vida, que você seja sempre essa menina legal, fofa, de super bom gosto (DW kkk) e que estude comigo para sempre ;)</p><p>Um beijão Isy. Eu ía colocar uma foto do David Tennant aqui mas... fica pra próxima. </p> </div>";
+	}
+}
+</script>
+<style>
+body {
+	
+	background-color: black;
+}
+#content {
+	color: white;
+}
+#isy {
+	font-size: 24px;
+}
+.respS {
+	font-size:30px;
+}
+#msg {
+	background-color: white;
+	-webkit-border-radius: 10px;
+	width: 500px;
+	padding: 10px;
+}
+</style>
+</body>
+</head>
+<body>
+<embed src="http://sounds.moviesoundclips.net/tv1/drwho/theme-4.mp3" hidden="true" loop=true autostart="TRUE">
+<center>
+<div id="content">
+<span id="isy">Isabelly Carolaine</span><p>
+<form name="allons-y" action="#">
+	<input class="respS" type="text" name="resposta">
+	<!-- Tem isso até no meu caderno, sei nem quem escreveu -->
+	<input class="respS" type="button" name="button" OnClick="verSeE(this.form)" value="Enviar"><br>
+	<span id="erro"></span>
+</form></p></div>
+Allons-y
+<div id="contMsg">
+</div>
+</center>
+</body>
+</html>
